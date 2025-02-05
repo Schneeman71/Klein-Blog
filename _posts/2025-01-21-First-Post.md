@@ -58,7 +58,7 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, color = spec
        x = "Flipper Length (mm)",
        y = "Body Mass (g)")
 ```
-![Flipper Length vs Body Mass in Penguins (R)](/assets/images/penguin_plotG.jpg)
+![Flipper Length vs Body Mass in Penguins (R)](https://schneeman71.github.io/Klein-Blog/assets/images/penguin_plotG.jpg)
 
 
 **Plotnine (Python)**
@@ -79,7 +79,7 @@ plot = (
          y="Body Mass (g)")
 )
 ```
-![Flipper Length vs Body Mass in Penguins (Python)](/assets/images/penguin_plotP.png)
+![Flipper Length vs Body Mass in Penguins (R)](https://schneeman71.github.io/Klein-Blog/assets/images/penguin_plotG.png)
 
 
 
