@@ -79,7 +79,7 @@ plot = (
          y="Body Mass (g)")
 )
 ```
-![Flipper Length vs Body Mass in Penguins (R)](https://schneeman71.github.io/Klein-Blog/assets/images/penguin_plotG.png)
+![Flipper Length vs Body Mass in Penguins (R)](https://schneeman71.github.io/Klein-Blog/assets/images/penguin_plotP.png)
 
 
 
