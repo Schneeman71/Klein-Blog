@@ -8,44 +8,44 @@ image: "/assets/images/penguin_plotP.png"
 
 ## ggplot2 to plotnine: A Guide for Data Science Students
 
+### **Introduction**  
+If you’ve worked with ggplot2 in R, you know how powerful and intuitive it is. With just a few lines of code, you can create visually appealing graphs that effectively communicate your data. But if you’re transitioning from R to Python, working on a project in Python, or simply curious, you may have wondered if Python has an equivalent.  
 
-### Introduction
-If you're coming from an R background and are interested in transitioning to Python for data visualization, or if you're working on a Python project but are already familiar with ggplot2, you might be wondering if Python has an equivalent.
+The good news is that Python does—Plotnine. Built on the same grammar-of-graphics principles as ggplot2, Plotnine allows you to create layered visualizations with familiar syntax, making the transition to Python’s visualization ecosystem feel seamless.  
 
-Fortunately, Plotnine brings the elegance and power of ggplot2 to Python, making the transition smoother than you might expect. This guide will walk you through the similarities, differences, and practical implementations of Plotnine, helping you seamlessly adapt to Python's visualization ecosystem.
-
+This guide will walk you through the similarities, differences, and practical applications of Plotnine to help you get started.  
 
 ### What is Plotnine?
-Plotnine is a Python library inspired by R's ggplot2, providing a grammar-of-graphics approach for creating layered visualizations easily. It allows users to build plots using the same structured syntax as ggplot2, making it highly attractive for people considering transitioning to Python from R, or for people who frequently work with both. 
-
+Plotnine is a Python library inspired by R’s ggplot2 and developed by Hassan Kibirige. It provides a structured, grammar-of-graphics approach to visualization, enabling users to build complex plots with minimal code. Whether you’re moving from R to Python or frequently switching between the two, Plotnine offers a smooth learning curve and an intuitive way to create high-quality visualizations.  
 
 ### Why Should You Use Plotnine?
-- Familiar Syntax: If you already know ggplot2, transitioning to plotnine is easy.
-- Grammar of Graphics: Allows for structured and layered visualization building.
-- Integration with Pandas: Works well with Python's data manipulation ecosystem.
+- **Familiar Syntax** – If you’re comfortable with ggplot2, transitioning to Plotnine feels natural. The grammar-of-graphics approach remains the same, so you can start visualizing data in Python with minimal learning curve.  
+- **Structured & Layered Visualizations** – Plotnine follows the grammar of graphics, allowing you to build complex plots by adding layers, themes, and scales—just like in ggplot2. This makes it easier to create customized and insightful visualizations.  
+- **Seamless Integration with Pandas** – Since Plotnine works directly with Pandas DataFrames, you can seamlessly integrate it into your Python data analysis workflow, making it a great choice for those already using Pandas for data manipulation.  
 
+### What is the Grammar of Graphics?  
+The **grammar of graphics** is a structured approach to data visualization that breaks a chart into fundamental components rather than treating it as a single entity. These components include **data, aesthetics, geometric objects, scales, and layers**, which can be combined systematically to build complex yet intuitive visualizations.  
 
-### Key Similarities Between ggplot2 and Plotnine
-Both libraries operate under the grammar of graphics paradigm, allowing users to construct plots in a declarative manner. Some fundamental similarities include:
+Both ggplot2 (R) and Plotnine (Python) follow this approach, allowing users to construct plots in a declarative and layered manner. Instead of specifying a chart all at once, you start with data, define how variables are mapped to aesthetics (such as axes, colors, and shapes), and then add geometric objects (such as points, lines, or bars) to visually represent the data. This makes it easy to incrementally refine a plot by adding, modifying, or customizing elements.  
 
-- Layered Approach: Both use the + operator to add elements like geoms, themes, and scales.
-- Aesthetic Mapping (aes): Both libraries use aesthetic mappings to bind data attributes to visual properties.
-- Faceting (facet_wrap, facet_grid): Multi-panel plots are supported in both ggplot2 and plotnine.
-- Extensibility: Users can easily create custom geoms, themes, and extensions in both environments.
-
+### Key Similarities Bewteen ggplot2 and Plotnine
+Plotnine modeled after ggplot2, they share many fundamental similarities such as: 
+- **Layered Composition** – Both libraries use the + operator to add elements incrementally, such as geoms (geometric objects), themes, scales, and labels.  
+- **Aesthetic Mapping (aes())** – Both use aesthetic mappings to link data attributes (e.g., x/y position, color, size) to visual properties dynamically.  
+- **Faceting for Multi-Panel Plots** – Functions like facet_wrap() and facet_grid() allow users to split data into multiple subplots, making it easier to compare different categories.  
+- **Customization & Extensibility** – Users can modify themes, define custom geoms, and extend functionality in both libraries, ensuring flexibility in visualization design.
 
 ### Key Differences Between ggplot2 and Plotnine
-While plotnine is modeled after ggplot2, there are some notable differences:
-While in R GGplot works locally with tidyverse dataframes, Python uses Pandas dataframes
-GGplot is optimized for R, so comparitively Plotnine will work slower in Python.
-
-
+There are a few minor distinction between ggplot and plotnine that should be considered:
+- **Data Handling** - while both function on dataframes, R uses tidyverse while Python uses Pandas. While similar, there may be cases where Pandas and Tidyverse handle the data slightly differently meaning the code may not be identical across languages.
+- **Performance** – ggplot2 is highly optimized for R, making it efficient for handling large datasets. In contrast, Plotnine can be slower in Python, particularly with larger datasets, because it lacks the same level of performance optimizations as ggplot2.
+- **Functionality Gaps** – While Plotnine replicates most ggplot2 features, some advanced functionalities, such as interactive plotting and certain statistical transformations, may be more developed in ggplot2. Python users often rely on Matplotlib or Seaborn to bridge in these gaps.  
 
 ### Code Comparison: ggplot2 vs. Plotnine
 
 #### Example 1: Penguins Scatter Plot
 
-Since the palmer penguins data is accessible in both Python (seaborn) and R (palmerpenguins), we will use it to demonstrate the similarities and differences between ggplot2 and Plotnine
+Since the palmer penguins data is accessible in both Python (seaborn) and R (palmerpenguins), we will use it to demonstrate the similarities and differences between ggplot2 and Plotnine in making a basic scatterplot.
 
 **ggplot2 (R)**
 ```r
@@ -88,12 +88,12 @@ As you can see, the syntax is nearly identical. You may also notice that matplot
 
 
 ### When Should You Use Plotnine in Python?
-While plotnine offers a familiar ggplot2-like experience, it may not always be the best choice. Consider `plotnine` when:
-- You are transitioning from R and want a similar syntax.
-- You prefer a declarative approach to visualization.
-- You are working with structured tabular data in Pandas.
+Plotnine is best used as a transitory tool between visualization in R vs Python. It's most useful when:
+- You are transitioning from R to Python and want similar syntax
+- You prefer a declarative approach to visualization
+- You are primarily working in R, but sometimes use Python
 
-However, as mentioned slightly before, plotnine works slower in python than it's competitors. As such for performance-heavy tasks, matplotlib and seaborn might be preferable in Python due to better optimization.
+However, as mentioned slightly before, plotnine works slower in python than it's competitors. As such for performance-heavy tasks, matplotlib and seaborn might be preferable in Python due to better optimization and support
 
 
 ### Further Resources
