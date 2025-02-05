@@ -3,7 +3,7 @@ layout: post
 title:  "5 minute trip from R to Python: Visualization"
 author: James Klein
 description: A guide for R users to quickly master visualization in Python using Plotnine.
-image: "/assets/images/RPython.avif"
+image: "/assets/images/penguin_plotP.png"
 ---
 
 ## Switching from R's ggplot2 to Python's Plotnine: A Guide for Data Science Students
