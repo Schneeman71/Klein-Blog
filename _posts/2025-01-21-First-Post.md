@@ -24,7 +24,7 @@ Plotnine is a Python library inspired by R’s ggplot2 and developed by Hassan K
 - **Seamless Integration with Pandas** – Since Plotnine works directly with Pandas DataFrames, you can seamlessly integrate it into your Python data analysis workflow, making it a great choice for those already using Pandas for data manipulation.  
 
 ### What is the Grammar of Graphics?  
-The **grammar of graphics** is a structured approach to data visualization that breaks a chart into fundamental components rather than treating it as a single entity. These components include **data, aesthetics, geometric objects, scales, and layers**, which can be combined systematically to build complex yet intuitive visualizations.  
+The grammar of graphics is a structured approach to data visualization that breaks a chart into fundamental components rather than treating it as a single entity. These components include data, aesthetics, geometric objects, scales, and layers, which can be combined systematically to build complex yet intuitive visualizations.  
 
 Both ggplot2 (R) and Plotnine (Python) follow this approach, allowing users to construct plots in a declarative and layered manner. Instead of specifying a chart all at once, you start with data, define how variables are mapped to aesthetics (such as axes, colors, and shapes), and then add geometric objects (such as points, lines, or bars) to visually represent the data. This makes it easy to incrementally refine a plot by adding, modifying, or customizing elements.  
 
@@ -59,7 +59,6 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, color = spec
        y = "Body Mass (g)")
 ```
 ![Flipper Length vs Body Mass in Penguins (R)](/assets/images/penguin_plotG.jpg)
-"/assets/images/penguin_plotG.jpg"
 
 
 **Plotnine (Python)**
