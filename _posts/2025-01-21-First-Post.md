@@ -6,7 +6,7 @@ description: A guide for R users to quickly master visualization in Python using
 image: "/assets/images/penguin_plotP.png"
 ---
 
-## GGplot to Plotnine: A Guide for Data Science Students
+## ggplot2 to plotnine: A Guide for Data Science Students
 
 ### Introduction
 If you're coming from an R background and are interested in transitioning to Python for data visualization, or if you're working on a Python project but are already familiar with ggplot2, you might be wondering if Python has an equivalent.
