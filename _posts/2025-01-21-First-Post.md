@@ -1,21 +1,9 @@
----
-layout: post
-title:  "How to create your first post"
-author: James Klein
-description: A post about creating your first post.   
-image: "/assets/images/image5.jpg"
----
-
-## How to create your first post
-
-* In order to create your first post, simply follow this guide. Don't worry too much about the small things.
-
 * ---
 layout: post
 title:  "Switching from R's ggplot2 to Python's Plot9: A Comparison"
 author: James Klein
 description: A guide for R users transitioning to Python's Plot9 for data visualization.
-image: "/assets/images/plot9_vs_ggplot.jpg"
+image: "/assets/images/RPython.avif"
 ---
 
 ## Switching from R's ggplot2 to Python's Plot9: A Comparison
