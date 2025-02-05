@@ -51,7 +51,8 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, color = spec
        x = "Flipper Length (mm)",
        y = "Body Mass (g)")
 ```
-![Flipper Length vs Body Mass in Penguins (R)](/assets/images/penguin_plotG)
+![Flipper Length vs Body Mass in Penguins (R)](/assets/images/penguin_plotG.jpg)
+
 
 
 **Plotnine (Python)**
@@ -72,7 +73,7 @@ plot = (
          y="Body Mass (g)")
 )
 ```
-![Flipper Length vs Body Mass in Penguins (Python)](/assets/images/penguin_plotP)
+![Flipper Length vs Body Mass in Penguins (Python)](/assets/images/penguin_plotP.png)
 
 
 As you can see, the syntax is nearly identical. You may also notice that matplotlib is also imported for python, however that's simply because it's a dependency for plotnine. In case you are unfamiliar with python, "from plotnine import *" simply means import all functions from the plotnine library. 
