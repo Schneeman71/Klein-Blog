@@ -41,11 +41,11 @@ There are a few minor distinction between ggplot and plotnine that should be con
 - **Performance** – ggplot2 is highly optimized for R, making it efficient for handling large datasets. In contrast, Plotnine can be slower in Python, particularly with larger datasets, because it lacks the same level of performance optimizations as ggplot2.
 - **Functionality Gaps** – While Plotnine replicates most ggplot2 features, some advanced functionalities, such as interactive plotting and certain statistical transformations, may be more developed in ggplot2. Python users often rely on Matplotlib or Seaborn to bridge in these gaps.  
 
-### Code Comparison: ggplot2 vs. Plotnine
+### Code Comparison for a Basic Scatterplot
 
-#### Example 1: Penguins Scatter Plot
+Since both R and Python have easy access to the Palmer Penguins datasets, we are going to use that dataset to create a simple scatterplot. First we'll look at the code in R (ggplot2) and then we'll look at the code for Python (plotnine). 
 
-Since the palmer penguins data is accessible in both Python (seaborn) and R (palmerpenguins), we will use it to demonstrate the similarities and differences between ggplot2 and Plotnine in making a basic scatterplot.
+Palmer Penguins = (palmerpenguins for R) (seaborn for Python)
 
 **ggplot2 (R)**
 ```r
@@ -59,6 +59,8 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, color = spec
        y = "Body Mass (g)")
 ```
 ![Flipper Length vs Body Mass in Penguins (R)](https://schneeman71.github.io/Klein-Blog/assets/images/penguin_plotG.jpg)
+
+I'm sure you're probably familiar with this code. But look how easy it is to rewrite this code in Python using Plotnine.
 
 
 **Plotnine (Python)**
@@ -83,8 +85,8 @@ plot = (
 
 
 
-As you can see, the syntax is nearly identical. You may also notice that matplotlib is also imported for python, however that's simply because it's a dependency for plotnine. In case you are unfamiliar with python, "from plotnine import *" simply means import all functions from the plotnine library. 
-
+As you can see, the syntax is nearly identical. While there are some minor differences (theme_minimal vs theme_light) or how python stores the graph in a variable called plot, none of them are too complicated. In case you are unfamiliar with python "from plotnine import *" just means to import all functions from the package.
+So basically, you're already 90% there!
 
 ### When Should You Use Plotnine in Python?
 Plotnine is best used as a transitory tool between visualization in R vs Python. It's most useful when:
