@@ -98,8 +98,9 @@ However, as mentioned slightly before, plotnine works slower in python than it's
 
 
 ### Further Resources
-- [Plotnine Documentation](https://plotnine.readthedocs.io/){:target="_blank"}
-- [ggplot2 Official Site](https://ggplot2.tidyverse.org/){:target="_blank"}
+- <a href="https://plotnine.readthedocs.io/" target="_blank" rel="noopener noreferrer">Plotnine Documentation</a>
+- <a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener noreferrer">ggplot2 Official Site</a>
+
 
 ### Call to Action
 For R users moving to Python, plotnine is a powerful alternative to ggplot2, preserving the grammar of graphics approach while integrating with Python's ecosystem. While some trade-offs exist, it remains an excellent option for those seeking familiarity in a new environment.
