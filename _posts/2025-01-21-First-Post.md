@@ -94,7 +94,7 @@ Plotnine is best used as a transitory tool between visualization in R vs Python.
 - You prefer a declarative approach to visualization
 - You are primarily working in R, but sometimes use Python
 
-However, as mentioned slightly before, plotnine works slower in python than it's competitors. As such for performance-heavy tasks, matplotlib and seaborn might be preferable in Python due to better optimization and support
+However, as mentioned slightly before, plotnine works slower in python than it's competitors. As such for performance-heavy tasks, matplotlib and seaborn might be preferable in Python due to better optimization and support.
 
 
 ### Further Resources
