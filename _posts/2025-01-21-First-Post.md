@@ -100,7 +100,6 @@ However, as mentioned slightly before, plotnine works slower in python than it's
 ### Further Resources
 - [Plotnine Documentation](https://plotnine.readthedocs.io/)
 - [ggplot2 Official Site](https://ggplot2.tidyverse.org/)
-- [Data Visualization in Python with Plotnine](https://towardsdatascience.com/using-plotnine-for-python-data-visualization-31d4c54e6eaf)
 
 
 ### Call to Action
