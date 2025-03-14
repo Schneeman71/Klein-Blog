@@ -1,125 +1,58 @@
 ---
 layout: post
-title:  "How to create a blog post"
-author: Shannon Tass
-description: A sample post with instructions and tips on how to create a new blog post.   
-image: "/assets/images/image5.jpg"
+title:  "The Lasting Impact of COVID-19 on the Gaming Industry"
+author: Your Name
+description: An analysis of how the COVID-19 pandemic influenced gaming habits and whether the growth in gaming persisted beyond the pandemic.
+image: /assets/images/gaming-impact.jpg
 ---
 
-## Steps for creating a new post.  
+## Introduction: Why This Project Matters
+The COVID-19 pandemic drastically altered many aspects of daily life, and one of the most significant shifts occurred in entertainment consumption. With lockdowns and social distancing measures in place, people turned to gaming as a primary source of entertainment, leading to a surge in player counts across various platforms. However, a crucial question remains: **Did this growth in gaming persist beyond the pandemic, or was it a temporary trend?**
 
-* Create a new file in the `_posts` folder called `YYYY-MM-DD-post-name.md`, where YYYY is the year (2023), MM numeric month (01-12), and DD is the numeric day of the month (01-31).  The `post-name` is a short name for the new post with `-` between words.  **You must use this name convention for all new posts.**  
+This project explores whether the pandemic resulted in lasting growth in gaming by analyzing player count data from Steam, one of the largest PC gaming platforms. By studying historical trends and post-pandemic data, we aim to understand how gaming habits have evolved and whether developers and companies can rely on sustained player engagement.
 
-*  Make the YML heading.  All pages in the site need to start with a YML heading.  For posts you should use the following header:
-```
----
-layout: post
-title:  "Post Name"
-author: Your name
-description: Short yet informative description
-image: /assets/images/blog-image.jpg
----
-```
-* For this theme, the layout should stay as `post`.   All the other fields should be updated with the information for your particular blog post.  The blog image should be a `.jpg` or `.png` file that you should add to the folder `assets/images`.  Don't make it too large or the page will take longer to load (500-800 KB is a good size).  Leave the file path as `/assets/images/` in the header area. 
+## Ethical Considerations and Data Collection
+When collecting data, it is essential to ensure that it is gathered ethically and in accordance with platform guidelines. The data for this project comes from the following sources:
+- **SteamDB & SteamCharts**: These platforms provide historical player count data for PC games.
+- **Steam Web API**: This API offers real-time player count data for specific games.
 
-* Write the body of the blog using markdown.  There are a lot of references for markdown available.  I like the [Markdown Guide](https://www.markdownguide.org) because many of the examples show both the markdown and the html code.  There are separate pages for [basic syntax](https://www.markdownguide.org/basic-syntax/), [extended syntax](https://www.markdownguide.org/extended-syntax/), and a [cheatsheet](https://www.markdownguide.org/cheat-sheet/) for quick reference. 
+The data was accessed using publicly available tools and was collected without violating any terms of service. Additionally, proper web scraping practices were followed to ensure minimal server load and ethical data retrieval.
 
-* You can also use html code snippets along with the markdown.  Often, using html will give you a little more control and flexibility as demonstrated below.
+## How to Collect Similar Data
+If you are interested in conducting a similar analysis, here are the steps to get started:
+1. **Identify a Data Source**: Websites like SteamDB, SteamCharts, and APIs such as the Steam Web API offer valuable gaming data.
+2. **Use an API or Web Scraping**: If an official API exists, use it to retrieve structured data. Otherwise, ethical web scraping techniques, such as setting request intervals and respecting `robots.txt`, should be followed.
+3. **Store and Clean the Data**: Organize your dataset in a structured format (CSV, JSON, etc.), removing any inconsistencies or missing values.
+4. **Analyze Trends**: Focus on key metrics such as player counts, growth rates, and overall trends across different time periods.
 
-This is a change
----
----
+## Exploratory Data Analysis (EDA) Highlights
+### Summary of the Dataset
+- **Total Sample Size**: 797 rows
+- **Key Features**:
+  - **Game Title**: Name of the game
+  - **Month**: Time period of observation
+  - **Average Player Count**: Mean number of players during that month
+  - **Monthly Growth Rate**: Percentage change in player count compared to the previous month
+  - **Total Player Count**: Sum of all average player counts for trend observation
+- **Time Scope**: Data spans from as early as 2012 to the present
+- **Games Included**: Seven popular titles across different genres
 
-### Links 
+### Key Findings
+- **Pre-Pandemic vs. Post-Pandemic Trends**: Player counts surged during the pandemic, but some games retained higher engagement levels even after restrictions were lifted.
+- **Sustained Growth in Some Genres**: Multiplayer and social games saw a more permanent player increase, while single-player titles experienced a gradual decline post-pandemic.
+- **Seasonal Variations**: Gaming spikes align with major holidays and new content releases, independent of pandemic influence.
 
-To create a link (internal or external), enclose the link text in brackets (e.g., [Statistics Department]) and then follow it immediately with the URL in parentheses (e.g., (https://statistics.byu.edu)).
+## Where to Learn More
+If you want to dig deeper into this project or replicate it, check out these resources:
+- **Steam Web API Documentation**: [https://developer.valvesoftware.com/wiki/Steam_Web_API](https://developer.valvesoftware.com/wiki/Steam_Web_API)
+- **SteamDB**: [https://steamdb.info/](https://steamdb.info/)
+- **SteamCharts**: [https://steamcharts.com/](https://steamcharts.com/)
 
-For example:
-```
-{% raw %}My favorite department at BYU is the [Statistics Department](https://statistics.byu.edu).{% endraw %}
-```
-My favorite department at BYU is the [Statistics Department](https://statistics.byu.edu)
+### GitHub Repository
+For access to the full dataset, data collection scripts, and analysis code, visit: [GitHub Repo Link - Replace with actual link]
 
+## Conclusion
+The pandemic undeniably caused a gaming boom, but the lasting effects are nuanced. While some games retained new players, others saw engagement drop as people returned to pre-pandemic routines. Understanding these trends is crucial for game developers, publishers, and industry analysts in predicting future growth patterns.
 
-If you want external links to open in a separate window, you will need to use html code with `target="_blank"` inside the `a` tag. 
+For students and analysts interested in replicating or extending this research, the dataset and methods outlined here provide a strong foundation for further exploration. Happy analyzing!
 
-For example:
-```
-My favorite department at BYU is the <a href="https:statistics.byu.edu" target="_blank">Statistics Department</a>
-```
-My favorite department at BYU is the <a href="https:statistics.byu.edu" target="_blank">Statistics Department</a>
-
-
-----
-----
-
-## Internal Links and Files
-
-If you want to have a link that points to another location on your site or if you want to include a file (such as an image or video) you must use the `site.url` and `site.baseurl` variables when making the link reference.  For example, this link to pointing to the [About]({{site.url}}/{{site.baseurl}}/about) page is coded as:
-```
-[About]({% raw %}{{site.url}}/{{site.baseurl}}/about){% endraw %}
-```
-Paths to files should also be referenced with the `site.url` and `site.baseurl` variables (see the section on **Adding Images**).
-
----
----
-
-## Adding Images
-*In the examples below, if your image ends with `.png` or `.JPEG`, use the appropriate extension instead of `.jpg`.*  
-
-Images for the blog will generally but put into the `assets/images` folder.  (You can also create a subfolder for images, but you will need to include the subfolder name in the reference link.) 
-
-Markdown syntax for including images is `![Fig Name](path/to/image)`.  For example:
-```
-{% raw %}![Figure]({{site.url}}/{{site.baseurl}}/assets/images/image_name.jpg){% endraw %}
-```
-![Figure]({{site.url}}/{{site.baseurl}}/assets/images/image5.jpg)
-
----
----
-
-### Resizing images
-
-The image I added in the previous section seems a bit large for this post.  Unfortunately,
-there isn't a good way to resize images with markdown, so if you need to resize an image, use html instead of markdown and specify the width in the style parameter as follows:
-
-```
-{% raw %}<img src="{{site.url}}/{{site.baseurl}}/assets/images/image_name.jpg" alt="" style="width:300px;"/>{% endraw %}
-```
-
-(Example with width set to 300 pixels)
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/image5.jpg" alt="" style="width:300px;"/>
-
-
-(Example with width set to 100 pixels)
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/image5.jpg" alt="" style="width:100px;"/>
-
-
-
----
----
----
-
-## Troubleshooting
-
-Here are some things to keep in mind if your blog appearance isn't going as you planned:
-
-**Problem:  The blog post that I created isn't appearing**
-
-Possible Solutions: 
-  - Check your date. GitHub pages won't display blog posts with future dates
-  - Check the yaml header.  If there are any special characters in any of the fields, you need to use quotes around the entire field entry.  The most common culprit is the description.  If you're having trouble, try putting quotes around the entire description
-
----
-
-**Problem:  I know that I made changes to a blog post but the changes aren't appearing**
-
-Possible Solution:
-  - Check the header.  If there are any special characters in any of the fields, you need to use quotes around the entire field entry.  The most common culprit is the description.  If you're having trouble, try putting quotes around the entire description.
-
----
-
-**Problem:  My entire blog has weird formatting**
-
-Possible Solution:
-  - Usually this is an address problem.  Double check your url and baseurl in the `_config` file
