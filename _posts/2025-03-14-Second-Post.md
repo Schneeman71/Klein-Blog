@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "The Lasting Impact of COVID-19 on the Gaming Industry"
-author: Your Name
-description: An analysis of how the COVID-19 pandemic influenced gaming habits and whether the growth in gaming persisted beyond the pandemic.
+title:  "The lasting impact of COVID-19 on the Gaming Industry"
+author: James Klein
+description: An analysis of how the COVID-19 pandemic influence the growth of long term gaming habits.
 image: /assets/images/gaming-impact.jpg
 ---
 
