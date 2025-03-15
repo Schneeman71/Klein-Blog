@@ -79,7 +79,12 @@ For students and analysts interested in replicating or extending this research, 
 If you want to dig deeper into this project or replicate it, check out these resources:
 - **SteamCharts**: [https://steamcharts.com/](https://steamcharts.com/)
 
+- <a href="https://steamcharts.com/" target="_blank" rel="noopener noreferrer">SteamCharts</a>
+
 ### GitHub Repository
 For access to the full dataset, data collection scripts, and analysis code, visit:
 [https://github.com/Schneeman71/kleinstat386post2]
+
+- <a href="https://github.com/Schneeman71/kleinstat386post2/" target="_blank" rel="noopener noreferrer">Work Repository</a>
+
 
