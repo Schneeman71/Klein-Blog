@@ -42,6 +42,8 @@ Organize your dataset in a structured format such as CSV, JSON, or a database, a
 - Analyze Trends
 Once the data is cleaned, focus on key metrics such as average player counts, monthly growth rates, and long-term trends. Comparing different time periods, such as pre- and post-pandemic trends, can provide deeper insights into player retention and industry shifts.
 
+-As far as web scraping, the data was collected from steamCharts. The data is cleanly organized into charts that can relatively easily be turned into a pandas dataframe. However, since player counts are by game by month, it required eliminating the first and final rows of the column in order to calculate the growth metric. Since to do so I took the change from the previous month to the current month. Overall the data is easy to work with and I recommend using the beautiful soup package when scraping the data.
+
 
 ## Exploratory Data Analysis (EDA) Highlights
 ### Summary of the Dataset
