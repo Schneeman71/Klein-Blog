@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "5 minute trip from R to Python: Visualization"
+title:  "Long term effects of Covid on games"
 author: James Klein
-description: A guide for R users to quickly master visualization in Python using the Plotnine package.
+description: A short analysis on the long term effects of the pandemic on the gaming industry
 image: "/assets/images/penguin_plotP.png"
 ---
 
