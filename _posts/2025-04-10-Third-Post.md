@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Long term effects of Covid on games"
+title:  "Covid and the Gaming Industry: In sickness and in wealth"
 author: James Klein
-description: A short analysis on the long term effects of the pandemic on the gaming industry
+description: Analysis of the effects of the pandemic on the gaming industry, with interactive streamlit tool
 image: "/assets/images/penguin_plotP.png"
 ---
 
-Your blog post should achieve the following objectives:
+
 
 1. Highlight Key Insights: 
 
@@ -27,3 +27,53 @@ Keep in mind the principles of good blogging (easy to read, images and figures t
 Resist the temptation to cover every interesting aspect of your data.  Focus on one or two insights and let your app enable exploration of other insight
 Aim for a reading time between 4-6 minutes, which corresponds to about 700 -1100 words.
 Longer is ok if needed, but long posts require extra effort to keep the reader engaged
+
+# Beyond the Pandemic Spike: Exploring Long-Term Gaming Trends + Interactive App
+
+## Introduction & Recap
+- Brief summary of the previous blog post
+- Reintroduce the core question: Did pandemic-era gamers stick around?
+- Explain goal of this post: uncover deeper insights and provide an interactive app
+
+## Key Insight #1: Multiplayer Games Showed Stronger Retention
+- Description of trend across multiplayer vs non-multiplayer games
+- Highlight Dota 2 and Counter-Strike 2 as examples
+- Include visualization suggestion (bar chart comparing pre/post growth)
+
+## Key Insight #2: One-Time Spike for Most Games
+- Discuss spike in 2020 followed by return to baseline or decline
+- Emphasize short-term nature of growth for many games
+- Include visualization suggestion (normalized line chart centered on March 2020)
+
+## Introducing the Streamlit App
+- Purpose: enable users to explore long-term gaming trends themselves
+- Link to app
+- Short bullet list of features:
+  - Filter by game or game type
+  - View player count or growth rate over time
+  - Compare multiplayer vs non-multiplayer
+  - Select custom time ranges
+  - Download filtered data
+
+## How to Use the App
+- Walkthrough of sidebar controls
+- Explain tabs or views
+- Suggest example uses (e.g., compare Apex Legends vs Terraria, 2019–2023)
+
+![Player Count](https://schneeman71.github.io/Klein-Blog/assets/images/player_count.png)
+
+![Growth Comparison 2018-2022](https://schneeman71.github.io/Klein-Blog/assets/images/growth_comparison.png)
+
+## Conclusion & Reflection
+- Summarize findings: social games may retain players better
+- Most games experienced a short-lived boom
+- Discuss future directions (e.g., console/mobile data, more games)
+- Encourage readers to explore app themselves
+
+## Resources & Links
+- [GitHub Repo](https://github.com/Schneeman71/Klein-Blog/_posts)
+- [Streamlit App](#)
+- [SteamCharts (Data Source)](https://steamcharts.com/)
+- [Part 1 Blog Post](https://schneeman71.github.io/Klein-Blog/)
+
+
