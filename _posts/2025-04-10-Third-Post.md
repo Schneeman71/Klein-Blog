@@ -69,10 +69,10 @@ As mentioned, this analysis is based on just **six games**, all from **Steam/PC*
 
 ## Resources
 
-- [🔗 Streamlit App](#)
-- [🔗 SteamCharts (Data Source)](https://steamcharts.com/)
-- [🔗 GitHub Repo (Code + Data)](https://github.com/Schneeman71/kleinstat386post2/)
-- [🔗 Part 1 Blog Post](https://schneeman71.github.io/Klein-Blog/)
+- <a href="#" target="_blank" rel="noopener noreferrer"> Streamlit App </a>
+- <a href="https://steamcharts.com/" target="_blank" rel="noopener noreferrer"> SteamCharts </a>
+- <a href="https://github.com/Schneeman71/kleinstat386post2/" target="_blank" rel="noopener noreferrer"> GitHub Repo </a>  
+- <a href="https://schneeman71.github.io/Klein-Blog/" target="_blank" rel="noopener noreferrer"> Blog Posts</a>
 
 Thanks for reading—and don’t forget to check out the app and dig into the data yourself!
 
