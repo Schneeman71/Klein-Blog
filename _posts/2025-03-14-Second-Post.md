@@ -2,7 +2,7 @@
 layout: post
 title:  "Through sickness and health, gaming?"
 author: James Klein
-description: An analysis of how the COVID-19 pandemic influenced the long term growth of the gaming industry.
+description: A pre-emptive explorative EDA walkthrough of how the covid-19 pandemic may have impacted the gaming industry.
 image: "/assets/images/game.jpg"
 ---
 
