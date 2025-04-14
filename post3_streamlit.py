@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import pandas as pd
 import plotly.express as px
 
@@ -14,8 +14,8 @@ st.sidebar.header("Filters")
 
 games = st.sidebar.multiselect(
     "Select Game(s):",
-    options=df["Game Title"].unique(),
-    default=df["Game Title"].unique()
+    options=df["Game"].unique(),
+    default=df["Game"].unique()
 )
 
 game_type = st.sidebar.radio(
@@ -29,7 +29,7 @@ max_year = df["Month"].dt.year.max()
 year_range = st.sidebar.slider("Select Year Range:", min_year, max_year, (min_year, max_year))
 
 filtered_df = df[
-    (df["Game Title"].isin(games)) &
+    (df["Game"].isin(games)) &
     (df["Month"].dt.year >= year_range[0]) &
     (df["Month"].dt.year <= year_range[1])
 ]
@@ -44,10 +44,11 @@ with tab1:
     fig1 = px.line(
         filtered_df,
         x="Month",
-        y="Average Player Count",
-        color="Game Title",
+        y="Avg Players",
+        color="Game",
         markers=True,
-        title="Player Count Over Time"
+        title="Player Count Over Time",
+        labels={"Avg Players": "Average Players"}
     )
     st.plotly_chart(fig1, use_container_width=True)
 
@@ -56,10 +57,11 @@ with tab2:
     fig2 = px.line(
         filtered_df,
         x="Month",
-        y="Monthly Growth Rate",
-        color="Game Title",
+        y="Growth",
+        color="Game",
         markers=True,
-        title="Growth Rate Over Time"
+        title="Growth Rate Over Time",
+        labels={"Growth": "Growth Rate (%)"}
     )
     st.plotly_chart(fig2, use_container_width=True)
 
