@@ -1,79 +1,78 @@
 ---
 layout: post
-title:  "Covid and the Gaming Industry: In sickness and in wealth"
+title:  "Finding Treasure Among the Trash"
 author: James Klein
-description: A further analysis of the effects of the Covid-19 pandemic on the gaming industry, with interactive streamlit tool
+description: A further analysis of the effects of the Covid-19 pandemic on the gaming industry, with interactive Streamlit tool
 image: "/assets/images/game2.jpg"
 ---
 
+# Finding Treasure Among the Trash
 
+## Introduction: Why This Still Matters
 
-1. Highlight Key Insights: 
+In a continuation of the previous post, we aim to finalize our exploration of how the **Covid-19 pandemic** impacted the **gaming industry** in the long term.
+Back in 2020, player counts on PC games spiked as millions were stuck at home. But years later, one question still lingers:
 
-Summarize and highlight one or two main insights you've discovered in your datasets 
-These insights should be meaningful, well-supported, and clearly communicated using appropriate visualizations and/or statistical summaries
-2. Introduce your Streamlit App: 
+> **Did those new gamers stick around, or did they move on as the world reopened?**
 
-Explain the purpose of your Streamlit app
-Describe what users can do with it, including types of visualizations or interactive features it contains
-Provide examples or discuss how users can explore the data and gain additional insights 
-Remember the following best practices: 
+In our previous post, we gathered data from [SteamCharts](https://steamcharts.com/) and did a basic exploratory analysis. Now, we’ll build on that with new insights and an **interactive Streamlit app** so *you* can explore the trends yourself.
 
-Include an introduction / motivation of why this project is relevant and interesting
-Remind the reader about your motivating question (what are you hoping to learn from this data?)
-Include links to find further information and /or resources
-Include a link to your code in a separate GitHub repo
-Keep in mind the principles of good blogging (easy to read, images and figures to enhance, relevant and interesting, etc.
-Resist the temptation to cover every interesting aspect of your data.  Focus on one or two insights and let your app enable exploration of other insight
-Aim for a reading time between 4-6 minutes, which corresponds to about 700 -1100 words.
-Longer is ok if needed, but long posts require extra effort to keep the reader engaged
+## Player Counts Over Time
 
-# Beyond the Pandemic Spike: Exploring Long-Term Gaming Trends + Interactive App
-
-## Introduction & Recap
-- Brief summary of the previous blog post
-- Reintroduce the core question: Did pandemic-era gamers stick around?
-- Explain goal of this post: uncover deeper insights and provide an interactive app
-
-## Key Insight #1: Multiplayer Games Showed Stronger Retention
-- Description of trend across multiplayer vs non-multiplayer games
-- Highlight Dota 2 and Counter-Strike 2 as examples
-- Include visualization suggestion (bar chart comparing pre/post growth)
-
-## Key Insight #2: One-Time Spike for Most Games
-- Discuss spike in 2020 followed by return to baseline or decline
-- Emphasize short-term nature of growth for many games
-- Include visualization suggestion (normalized line chart centered on March 2020)
-
-## Introducing the Streamlit App
-- Purpose: enable users to explore long-term gaming trends themselves
-- Link to app
-- Short bullet list of features:
-  - Filter by game or game type
-  - View player count or growth rate over time
-  - Compare multiplayer vs non-multiplayer
-  - Select custom time ranges
-  - Download filtered data
-
-## How to Use the App
-- Walkthrough of sidebar controls
-- Explain tabs or views
-- Suggest example uses (e.g., compare Apex Legends vs Terraria, 2019–2023)
+To refresh your memory, here’s a plot showing **average monthly player counts** for six popular games from **2012 to early 2024**:
 
 ![Player Count](https://schneeman71.github.io/Klein-Blog/assets/images/player_count.png)
 
+Across all games, we see a clear **pandemic-era spike** starting in early 2020. But, for most titles, that spike doesn’t last—player counts taper off and return to prior trends or even decline.
+
+## Multiplayer vs Non-Multiplayer Growth
+
+To dig deeper, we compared **growth rates between 2018–2023**, dividing games into **multiplayer** and **non-multiplayer**.
+
 ![Growth Comparison 2018-2022](https://schneeman71.github.io/Klein-Blog/assets/images/growth_comparison.png)
 
-## Conclusion & Reflection
-- Summarize findings: social games may retain players better
-- Most games experienced a short-lived boom
-- Discuss future directions (e.g., console/mobile data, more games)
-- Encourage readers to explore app themselves
+Interestingly, **non-multiplayer games** experienced a larger spike in growth just after the pandemic hit, but the boost was **short-lived**. A second spike around 2.5 years later seems unrelated to the pandemic—possibly tied to new game releases or updates.
 
-## Resources & Links
-- [GitHub Repo](https://github.com/Schneeman71/Klein-Blog/_posts)
-- [Streamlit App](#)
-- [SteamCharts (Data Source)](https://steamcharts.com/)
-- [Part 1 Blog Post](https://schneeman71.github.io/Klein-Blog/)
+## Main Takeaways
 
+While our dataset is limited, a few patterns stand out:
+
+- **The pandemic caused a clear short-term spike** in player activity across all games.
+- **Multiplayer games (like Dota 2, CS2)** seem to retain players slightly better over time.
+- However, the data is ultimately **inconclusive** about long-term pandemic impact, due to limited sample size and game diversity.
+
+To help others explore these trends and maybe find insights we missed, we built an interactive Streamlit app.
+
+## Explore the Data Yourself: Streamlit App
+
+To make this analysis more interactive, we created a Streamlit app that lets you:
+
+- **Select games** you want to analyze  
+- **Filter by year range** using a slider  
+- Switch between **Average Player Count** and **Growth Rate** views  
+- **Download** filtered datasets for your own projects
+
+> [Click here to open the Streamlit App](#)
+
+This tool lets you create your own charts and ask your own questions:
+- How does Apex Legends compare to PUBG over time?
+- Did Rust grow faster post-pandemic than pre-pandemic?
+- Do multiplayer games recover faster from dips in activity?
+
+## Limitations & Future Work
+
+As mentioned, this analysis is based on just **six games**, all from **Steam/PC**. The gaming industry is massive and fragmented—future work could include:
+
+- Expanding the sample to 50+ games
+- Including data from consoles (Xbox, PlayStation, Switch)
+- Factoring in game releases and major updates
+
+## Resources
+
+- [🔗 Streamlit App](#)
+- [🔗 SteamCharts (Data Source)](https://steamcharts.com/)
+- [🔗 GitHub Repo (Code + Data)](https://github.com/Schneeman71/kleinstat386post2/)
+- [🔗 Part 1 Blog Post](https://schneeman71.github.io/Klein-Blog/)
+
+Thanks for reading—and don’t forget to check out the app and dig into the data yourself!
 
