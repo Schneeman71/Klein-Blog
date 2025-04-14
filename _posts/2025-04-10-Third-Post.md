@@ -2,7 +2,7 @@
 layout: post
 title:  "Covid and the Gaming Industry: In sickness and in wealth"
 author: James Klein
-description: Analysis of the effects of the pandemic on the gaming industry, with interactive streamlit tool
+description: A further analysis of the effects of the Covid-19 pandemic on the gaming industry, with interactive streamlit tool
 image: "/assets/images/game2.jpg"
 ---
 
