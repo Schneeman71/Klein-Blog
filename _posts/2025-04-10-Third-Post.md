@@ -13,7 +13,7 @@ image: "/assets/images/game2.jpg"
 In a continuation of the previous post, we aim to finalize our exploration of how the **Covid-19 pandemic** impacted the **gaming industry** in the long term.
 Back in 2020, player counts on PC games spiked as millions were stuck at home. But years later, one question still lingers:
 
-> **Did those new gamers stick around, or did they move on as the world reopened?**
+**Did those new gamers stick around, or did they move on as the world reopened?**
 
 In our previous post, we gathered data from [SteamCharts](https://steamcharts.com/) and did a basic exploratory analysis. Now, we’ll build on that with new insights and an **interactive Streamlit app** so *you* can explore the trends yourself.
 
